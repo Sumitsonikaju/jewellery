@@ -27,7 +27,7 @@ const products = [
         material: 'Silver',
         image: './assets/products/image.png',
         alt: 'Silver Ganesh Rakhi',
-        link: 'https://www.flipkart.com/ace-mumbai-rakhi2-silver-rakhi-set/p/itm5e9b6aea01062?pid=RAKH3J6CCWFBXCHG&lid=LSTRAKH3J6CCWFBXCHG4IKTML&marketplace=FLIPKART&q=ACE+Mumbai+&store=search.flipkart.com&srno=s_1_3&otracker=search&otracker1=search&fm=Search&iid=820723c2-b9a8-4d3b-ae07-ec26b8e6d123.RAKH3J6CCWFBXCHG.SEARCH&ppt=sp&ppn=sp&ssid=eqe3kq8ots0000001723404461162&qH=2f328d293366a3b2'
+        link: 'https://example.com/silver-ganesh-rakhi'
     },
     {
         id: 3,
@@ -70,7 +70,8 @@ const products = [
         image: './assets/products/rakhi.png',
         alt: 'Silver Rakhi',
         link: 'https://example.com/silver-rakhi'
-    }
+    },
+    
 ];
 
 function calculateDiscountPercentage(currentPrice, originalPrice) {
@@ -85,16 +86,12 @@ function addProduct(product) {
 
 function removeProduct(id) {
     products = products.filter(product => product.id !== id);
+    
     renderProducts();
 }
 
-function renderProducts(filteredProducts = products) {
+function renderProducts(filteredProducts) {
     const productGrid = document.querySelector('.product-grid');
-    if (!productGrid) {
-        console.error('Element with class "product-grid" not found.');
-        return;
-    }
-
     productGrid.innerHTML = ''; // Clear existing products
 
     filteredProducts.forEach(product => {
@@ -118,14 +115,27 @@ function renderProducts(filteredProducts = products) {
     });
 }
 
-// Expose products and renderProducts to global scope
-window.products = products;
-window.renderProducts = renderProducts;
+function filterProducts() {
+    const category = document.getElementById('category-filter').value;
+    const type = document.getElementById('type-filter').value;
+    const shape = document.getElementById('shape-filter').value;
+    const color = document.getElementById('color-filter').value;
+    const material = document.getElementById('material-filter').value;
 
-// Ensure renderProducts is called once DOM is fully loaded
+    const filteredProducts = products.filter(product => {
+        return (category === 'All' || product.category === category) &&
+               (type === 'All' || product.type === type) &&
+               (shape === 'All' || product.shape === shape) &&
+               (color === 'All' || product.color === color) &&
+               (material === 'All' || product.material === material);
+    });
+
+    renderProducts(filteredProducts);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     // Initial render
-    renderProducts();
+    renderProducts(products);
 
     // Add event listeners to filters
     const filters = document.querySelectorAll('.filter');

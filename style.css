@@ -16,9 +16,19 @@ body {
   flex: 1; /* Takes up the available space */
 }
 
+
+.flexb{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  margin: 0 40px 0 40px;
+  font-weight: bold;
+}
+
 header .logo img {
   width: 150px;
-  margin: 20px auto;
+  margin: 20px auto;  
+  
 }
 
 .banner {
