@@ -3,9 +3,9 @@
 const products = [
     {
         id: 1,
-        name: 'Sterling Silver Necklace',
-        currentPrice: 690,
-        originalPrice: 1200,
+        name: 'Silver Sterling Silver Bracelet',
+        currentPrice: 2450,
+        originalPrice: 3500,
         category: 'Necklaces',
         type: 'Silver',
         shape: 'Round',
@@ -13,7 +13,7 @@ const products = [
         material: 'Silver',
         image: './assets/products/bracelet.png',
         alt: 'Sterling Silver Necklace',
-        link: 'https://example.com/sterling-silver-necklace'
+        link: 'https://www.flipkart.com/ace-silver-sterling-bracelet/p/itmad03e427fecaa?pid=BBAH3K7SGZMMF4G3&lid=LSTBBAH3K7SGZMMF4G3EFK6CM&marketplace=FLIPKART&q=ACE+925&store=search.flipkart.com&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=76d891b9-1a2b-4fc1-b58e-ecf070ac8e9d.BBAH3K7SGZMMF4G3.SEARCH&ppt=sp&ppn=sp&qH=31d3cc01872a1cf5'
     },
     {
         id: 2,
@@ -27,27 +27,14 @@ const products = [
         material: 'Silver',
         image: './assets/products/image.png',
         alt: 'Silver Ganesh Rakhi',
-        link: 'https://example.com/silver-ganesh-rakhi'
+        link: 'https://www.flipkart.com/ace-mumbai-rakhi2-silver-rakhi-set/p/itm5e9b6aea01062?pid=RAKH3J6CCWFBXCHG&lid=LSTRAKH3J6CCWFBXCHG4IKTML&marketplace=FLIPKART&q=ACE+Mumbai+&store=search.flipkart.com&srno=s_1_3&otracker=search&otracker1=search&fm=Search&iid=820723c2-b9a8-4d3b-ae07-ec26b8e6d123.RAKH3J6CCWFBXCHG.SEARCH&ppt=sp&ppn=sp&ssid=eqe3kq8ots0000001723404461162&qH=2f328d293366a3b2'
     },
-    {
-        id: 3,
-        name: 'Gold Hoop Earrings',
-        currentPrice: 3495,
-        originalPrice: 4995,
-        category: 'Earrings',
-        type: 'Gold',
-        shape: 'Oval',
-        color: 'Gold',
-        material: 'Gold',
-        image: './assets/products/earrings.png',
-        alt: 'Gold Hoop Earrings',
-        link: 'https://example.com/gold-hoop-earrings'
-    },
+    
     {
         id: 4,
-        name: 'Platinum Bracelet',
-        currentPrice: 5995,
-        originalPrice: 7995,
+        name: 'Silver Bracelet Mahadev',
+        currentPrice: 2250,
+        originalPrice: 3400,
         category: 'Bracelets',
         type: 'Platinum',
         shape: 'Round',
@@ -55,21 +42,21 @@ const products = [
         material: 'Platinum',
         image: './assets/products/bracelet.png',
         alt: 'Platinum Bracelet',
-        link: 'https://example.com/platinum-bracelet'
+        link: 'https://www.flipkart.com/ace-silver-sterling-bracelet/p/itmad03e427fecaa?pid=BBAH3K7SGZMMF4G3&lid=LSTBBAH3K7SGZMMF4G3EFK6CM&marketplace=FLIPKART&q=ACE+925&store=search.flipkart.com&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=76d891b9-1a2b-4fc1-b58e-ecf070ac8e9d.BBAH3K7SGZMMF4G3.SEARCH&ppt=sp&ppn=sp&qH=31d3cc01872a1cf5'
     },
     {
         id: 5,
-        name: 'Silver Rakhi',
-        currentPrice: 795,
-        originalPrice: 1200,
+        name: 'Silver Bracelet',
+        currentPrice: 3150,
+        originalPrice: 4500,
         category: 'Rakhis',
         type: 'Silver',
         shape: 'Square',
         color: 'Silver',
         material: 'Silver',
-        image: './assets/products/rakhi.png',
+        image: './assets/products/silver_bracelate.webp',
         alt: 'Silver Rakhi',
-        link: 'https://example.com/silver-rakhi'
+        link: 'https://www.flipkart.com/ace-silver-bracelet/p/itmfc50665f64fdf?pid=BBAH3MFP4U4GHXQK&lid=LSTBBAH3MFP4U4GHXQKR1UWKP&marketplace=FLIPKART&q=ACE+925&store=search.flipkart.com&srno=s_1_8&otracker=search&otracker1=search&fm=Search&iid=76d891b9-1a2b-4fc1-b58e-ecf070ac8e9d.BBAH3MFP4U4GHXQK.SEARCH&ppt=sp&ppn=sp&qH=31d3cc01872a1cf5'
     },
     
 ];
@@ -86,7 +73,7 @@ function addProduct(product) {
 
 function removeProduct(id) {
     products = products.filter(product => product.id !== id);
-    
+
     renderProducts();
 }
 
