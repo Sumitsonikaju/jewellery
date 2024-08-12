@@ -27,7 +27,7 @@ const products = [
         material: 'Silver',
         image: './assets/products/image.png',
         alt: 'Silver Ganesh Rakhi',
-        link: 'https://example.com/silver-ganesh-rakhi'
+        link: 'https://www.flipkart.com/ace-mumbai-rakhi2-silver-rakhi-set/p/itm5e9b6aea01062?pid=RAKH3J6CCWFBXCHG&lid=LSTRAKH3J6CCWFBXCHG4IKTML&marketplace=FLIPKART&q=ACE+Mumbai+&store=search.flipkart.com&srno=s_1_3&otracker=search&otracker1=search&fm=Search&iid=820723c2-b9a8-4d3b-ae07-ec26b8e6d123.RAKH3J6CCWFBXCHG.SEARCH&ppt=sp&ppn=sp&ssid=eqe3kq8ots0000001723404461162&qH=2f328d293366a3b2'
     },
     {
         id: 3,
