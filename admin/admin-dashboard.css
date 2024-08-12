@@ -1,0 +1,104 @@
+/* General Header Styles */
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo img {
+    width: 150px;
+    margin: 20px auto;
+}
+
+/* Wrapper for full viewport height and footer positioning */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Admin Dashboard Styles */
+.admin-dashboard {
+    padding: 20px;
+    flex: 1; /* Ensure this section takes available space */
+}
+
+.admin-dashboard h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff; /* Text color consistent with theme */
+}
+
+.admin-dashboard .btn {
+    background-color: #f7c948;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.admin-dashboard .btn:hover {
+    background-color: #ffba00;
+    color: #fff;
+}
+
+
+.edit-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Adjust width */
+    height: 40px; /* Adjust height to be the same as width for a perfect circle */
+    border: 3px solid #ffba00; /* Red border */
+    border-radius: 50%; /* Circular border */
+    background-color: #020202; /* Background color for contrast */
+    color: #ffba00; /* Color of the X */
+    font-size: 24px; /* Adjust font size to fit */
+    font-weight: bold;
+    cursor: pointer; /* Makes the icon clickable */
+    text-align: center;
+    line-height: 40px;
+
+
+}
+.alter-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delete-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Adjust width */
+    height: 40px; /* Adjust height to be the same as width for a perfect circle */
+    border: 3px solid red; /* Red border */
+    border-radius: 50%; /* Circular border */
+    background-color: #020202; /* Background color for contrast */
+    color: red; /* Color of the X */
+    font-size: 24px; /* Adjust font size to fit */
+    font-weight: bold;
+    cursor: pointer; /* Makes the icon clickable */
+    text-align: center;
+    line-height: 40px; /* Centers the text vertically */
+    
+
+}
+
+
+
+
+
+/* Footer Placeholder Styles */
+#footer-placeholder {
+    margin-top: auto; /* Push footer to bottom */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-card {
+        flex: 1 1 100%; /* Stack product cards on smaller screens */
+        max-width: 100%;
+    }
+}

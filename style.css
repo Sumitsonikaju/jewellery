@@ -1,0 +1,203 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.content {
+  flex: 1; /* Takes up the available space */
+}
+
+header .logo img {
+  width: 150px;
+  margin: 20px auto;
+}
+
+.banner {
+  background: #333 url("banner-image.jpg") no-repeat center center/cover;
+  padding: 100px 20px;
+}
+
+.banner-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.banner-text p {
+  font-size: 18px;
+}
+
+.shop h2 {
+  font-size: 28px;
+  margin: 50px 0 20px;
+}
+
+.filters {
+  margin: 20px;
+  text-align: left;
+}
+
+.filters label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.filters .form-select {
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 20px;
+}
+
+.product {
+  text-align: center;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product h3 {
+  margin: 15px 0;
+  color: #fff;
+}
+
+.product p {
+  color: #fff;
+  font-size: 18px;
+}
+
+.product .btn {
+  background-color: #f7c948;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product .btn:hover {
+  background-color: #ffba00;
+  color: #fff;
+}
+
+footer {
+  background-color: #111;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Existing styles */
+
+.price {
+  font-size: 18px;
+  margin: 15px 0;
+  color: #fff;
+}
+
+.current-price {
+  font-size: 22px;
+  color: #f7c948;
+  font-weight: bold;
+}
+
+.original-price {
+  font-size: 18px;
+  color: #ccc;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+
+.discount {
+  font-size: 18px;
+  color: #ffba00;
+  margin-left: 10px;
+}
+
+/* Filter Section */
+/* Filter Section */
+.filters {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Space between filters */
+}
+
+/* Filter labels and select elements */
+.filters label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #f7c948;
+  margin-bottom: 5px;
+}
+
+.filters .form-select {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  flex: 1; /* Make dropdowns flexible */
+  max-width: 200px; /* Limit width */
+}
+
+/* Enhance focus state of dropdown */
+.filters .form-select:focus {
+  border-color: #f7c948;
+  background-color: #444;
+  color: #fff;
+  outline: none;
+}
+
+/* Ensure all filters fit within single line */
+.filters .form-select option {
+  background-color: #333;
+  color: #fff;
+}
+
+.filters .form-select option:focus {
+  background-color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .filters {
+      flex-direction: column;
+      align-items: stretch;
+  }
+  
+  .filters .form-select {
+      max-width: none;
+      margin-bottom: 15px;
+  }
+}

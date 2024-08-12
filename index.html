@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="products.js"></script>
+    <script defer type="module" src="load-header-footer.js"></script>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://silverhouseshop.in/wp-content/uploads/2024/07/Silver-Rakhi-Discount-by-Silver-House-2592x864-1-scaled.jpg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://silverhouseshop.in/wp-content/uploads/2024/07/Silver-Rakhi-Discount-by-Silver-House-2592x864-1-scaled.jpg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://silverhouseshop.in/wp-content/uploads/2024/07/Silver-Rakhi-Discount-by-Silver-House-2592x864-1-scaled.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+                <img src="https://silverhouseshop.in/wp-content/uploads/2024/07/Silver-Rakhi-Discount-by-Silver-House-2592x864-1-scaled.jpg" class="d-block w-100" alt="Slide 4">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+
+    <section class="shop">
+        <h2>Shop Jewelry</h2>
+        <!-- Filters -->
+        <div class="filters">
+            <label for="category-filter">Category:</label>
+            <select id="category-filter" class="form-select filter">
+                <option value="All">All</option>
+                <option value="Necklaces">Necklaces</option>
+                <option value="Rakhis">Rakhis</option>
+                <option value="Bracelets">Bracelets</option>
+                <option value="Earrings">Earrings</option>
+            </select>
+
+            <label for="type-filter">Type:</label>
+            <select id="type-filter" class="form-select filter">
+                <option value="All">All</option>
+                <option value="Silver">Silver</option>
+                <option value="Gold">Gold</option>
+                <option value="Platinum">Platinum</option>
+            </select>
+
+            <label for="shape-filter">Shape:</label>
+            <select id="shape-filter" class="form-select filter">
+                <option value="All">All</option>
+                <option value="Round">Round</option>
+                <option value="Square">Square</option>
+                <option value="Oval">Oval</option>
+            </select>
+
+            <label for="color-filter">Color:</label>
+            <select id="color-filter" class="form-select filter">
+                <option value="All">All</option>
+                <option value="Silver">Silver</option>
+                <option value="Gold">Gold</option>
+                <option value="Rose Gold">Rose Gold</option>
+            </select>
+
+            <label for="material-filter">Material:</label>
+            <select id="material-filter" class="form-select filter">
+                <option value="All">All</option>
+                <option value="Silver">Silver</option>
+                <option value="Gold">Gold</option>
+                <option value="Platinum">Platinum</option>
+                <option value="Alloy">Alloy</option>
+            </select>
+        </div>
+
+        <div class="product-grid">
+            <!-- Products will be rendered here -->
+        </div>
+    </section>
+
+    <!-- This footer will be replaced by the content of footer.html -->
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="products.js"></script>
+</body>
+</html>
